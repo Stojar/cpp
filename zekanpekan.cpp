@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include<math.h>
+#include<conio.h>
 
 struct zeko{
     int masa;
@@ -43,8 +44,29 @@ struct zeko{
 	fclose(filePointer);
 }
 	int main(){
-	unos();
-	ispis();
 	
+	   char odabir;
+
+do{
+
+    printf("1. Unos \n");
+    printf("2. Ispis\n");
+    printf("3. Hitler\n");
+    printf("4. Komb odabir\n");
+    printf("5. Max i min\n");
+    printf("6. exit\n");
+
+    odabir=getch();
+
+    switch (odabir){
+    	case '1': unos();
+    	break;
+    	case '2': ispis();
+    	break;
+	 }
+}while (odabir!='6');
+
+
+
 	
 	}
